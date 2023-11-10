@@ -1,0 +1,13 @@
+body{
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.footer {
+    position: absolute;
+    top: 95%;
+    left: 47%;
+    color: #000000;
+    opacity: 50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+  }

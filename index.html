@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/icon" sizes="32x32" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Google</title>
+</head>
+<body class="bg-[url('https://browsecat.art/sites/default/files/chinese-art-background-127223-298696-8584707.png')]">
+    <h1 class="font-bold ml-24 text-pink-700 p-48 text-9xl -mb-28" >Google</h1>
+
+    <form id="searchform" class="flex flex-col mr-96" action="https://www.google.com/search" method="GET" target="_blank">
+        <input id="searchinput" name="q" class="search mb-9 font-sans text-xl text-center rounded-full text-gray-600 border-2 border-pink-800 mr-96 ml-24 py-3 px-10 focus:outline-none focus:border-pink-500 focus:border-4 focus:text-gray-900 transition " type="text" placeholder="Search Google or type a URL">
+    </form>
+
+    <div class="shortcuts flex cursor-pointer">
+<img class="w-16 ml-60 hover:scale-110" onclick="youtube()" src="youtube2.png" alt="">
+<img class="w-16 ml-10 hover:scale-110" onclick="whatsapp()" src="whatsapp.png" alt="">
+<img class="w-16 scale-125 ml-10 hover:scale-150" onclick="github()" src="Github.png" alt="">
+<img class="w-16 ml-10 hover:scale-110" onclick="chatgpt()" src="chatgpt.png" alt="">
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2023 Aindrik.</p>
+    </div>   
+
+    <script>
+        document.getElementById('searchInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                document.getElementById('searchform').submit();
+            }
+        });
+        function youtube(){
+            window.open("https://www.youtube.com/","_blank");
+        }
+        function whatsapp(){
+            window.open("https://web.whatsapp.com/","_blank");
+        }
+        function github(){
+            window.open("https://github.com/","_blank");
+        }
+        function chatgpt(){
+            window.open("https://chat.openai.com/","_blank");
+        }
+    </script>
+
+
+</body>
+</html>
